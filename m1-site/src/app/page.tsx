@@ -7,44 +7,45 @@ export default function HomePage() {
   const [authors, setAuthors] = useState([]);
 
   useEffect(() => {
-    
+    // Exemple d'appel API pour obtenir les données des livres et auteurs
   }, []);
 
   return (
-    <div className="homepage">
-      <main className="content">
-        <p className="welcome-text">Bienvenue sur notre bibliothèque virtuelle !</p>
+    <div className="bg-gray-100 dark:bg-gray-900 min-h-screen p-4">
+      <main className="container mx-auto text-center">
+        <p className="text-3xl font-bold mb-8 text-gray-900 dark:text-gray-100">
+          Bienvenue sur notre bibliothèque virtuelle !
+        </p>
 
-        <section className="books-section">
-          <h2 className="section-title">Livres</h2>
-          {books.length > 0 ? (
-            <ul className="book-list">
-              {books.map((book) => (
-                <li key={book.id} className="book-item">
-                  <h3>{book.title}</h3>
-                  <p>Auteur : {book.author}</p>
-                  <p>Note : {book.rating} / 5</p>
-                </li>
-              ))}
-            </ul>
-          ) : (
-            <p>Aucun livre disponible pour le moment.</p>
-          )}
+        <section className="mb-12">
+          <h2 className="text-2xl font-semibold text-gray-800 dark:text-gray-200 mb-4">Livres</h2>
+          <div className="flex flex-wrap justify-center gap-4">
+            {books.length > 0 ? (
+              books.map((book) => (
+                <div key={book.id} className="bg-white dark:bg-gray-800 rounded-lg p-4 shadow-md">
+                  <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-100">{book.title}</h3>
+                  <p className="text-gray-700 dark:text-gray-300">Auteur : {book.author}</p>
+                </div>
+              ))
+            ) : (
+              <p className="text-gray-700 dark:text-gray-300">Aucun livre disponible pour le moment.</p>
+            )}
+          </div>
         </section>
 
-        <section className="authors-section">
-          <h2 className="section-title">Auteurs</h2>
-          {authors.length > 0 ? (
-            <ul className="author-list">
-              {authors.map((author) => (
-                <li key={author.id} className="author-item">
-                  <p>{author.firstName} {author.lastName}</p>
-                </li>
-              ))}
-            </ul>
-          ) : (
-            <p>Aucun auteur disponible pour le moment.</p>
-          )}
+        <section>
+          <h2 className="text-2xl font-semibold text-gray-800 dark:text-gray-200 mb-4">Auteurs</h2>
+          <div className="flex flex-wrap justify-center gap-4">
+            {authors.length > 0 ? (
+              authors.map((author) => (
+                <div key={author.id} className="bg-white dark:bg-gray-800 rounded-lg p-4 shadow-md">
+                  <p className="text-gray-900 dark:text-gray-100">{author.firstName} {author.lastName}</p>
+                </div>
+              ))
+            ) : (
+              <p className="text-gray-700 dark:text-gray-300">Aucun auteur disponible pour le moment.</p>
+            )}
+          </div>
         </section>
       </main>
     </div>
