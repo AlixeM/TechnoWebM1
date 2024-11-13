@@ -1,17 +1,22 @@
 import React from 'react';
-import Navbar from './Navbar'; // Assurez-vous que Navbar est bien importé
+import Navbar from './Navbar';
 
 export default function Header() {
   return (
-    <header className="bg-gradient-to-r from-purple-500 to-blue-600 text-white py-12">
-      <div className="container mx-auto flex flex-col justify-center items-center">
-        {/* Logo */}
-        <div className="text-4xl font-bold tracking-wider mb-6">
-          <span className="text-white">My</span>
-          <span className="text-yellow-300">Library</span>
+    <header className="bg-gradient-to-r from-teal-400 to-indigo-600 text-white py-6">
+      <div className="container mx-auto flex flex-col justify-center">
+        {/* Logo aligné à gauche avec marge */}
+        <div className="text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-orange-400 mb-4 ml-8">
+          <span>Book</span>
+          <span className="ml-2">Haven</span>
         </div>
 
+        {/* Slogan centré */}
+        <p className="text-base font-medium text-gray-200 mb-4 text-center mx-auto">
+          Votre destination ultime pour la lecture et l'inspiration
+        </p>
 
+        {/* Navbar */}
         <Navbar />
       </div>
     </header>

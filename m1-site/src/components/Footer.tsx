@@ -1,13 +1,41 @@
 import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faFacebookF, faTwitter, faInstagram } from '@fortawesome/free-brands-svg-icons';
+
 
 const Footer = () => {
   return (
-    <footer className="bg-gradient-to-r from-purple-500 to-blue-600 text-white py-6 mt-12">
+    <footer className="bg-gradient-to-r from-teal-400 to-indigo-600 text-white py-12 mt-0">
       <div className="container mx-auto text-center">
-        <p className="text-lg">© 2024 MyLibrary. Tous droits réservés.</p>
-        <div className="mt-4">
-          <a className="text-yellow-300 hover:underline mx-2">Mentions légales</a>
-          <a className="text-yellow-300 hover:underline mx-2">Politique de confidentialité</a>
+        {/* Texte de copyright */}
+        <p className="text-lg font-medium mb-6">
+          © 2024 <span className="font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-orange-400">Book Haven</span>. Tous droits réservés.
+        </p>
+
+        {/* Liens du footer */}
+        <div className="mt-4 flex justify-center gap-8">
+          <a className="text-yellow-300 hover:text-yellow-500 transition-colors duration-300 transform hover:scale-110">
+            Mentions légales
+          </a>
+          <a className="text-yellow-300 hover:text-yellow-500 transition-colors duration-300 transform hover:scale-110">
+            Politique de confidentialité
+          </a>
+        </div>
+
+        {/* Ligne de séparation avec effet */}
+        <div className="mt-8 border-t-2 border-white opacity-40 w-1/2 mx-auto"></div>
+
+        {/* Icônes*/}
+        <div className="mt-6 flex justify-center space-x-6">
+          <a href="#" className="text-white hover:text-yellow-300 transition-colors duration-300">
+            <i className="fab fa-facebook-f text-xl"></i>
+          </a>
+          <a href="#" className="text-white hover:text-yellow-300 transition-colors duration-300">
+            <i className="fab fa-twitter text-xl"></i>
+          </a>
+          <a href="#" className="text-white hover:text-yellow-300 transition-colors duration-300">
+            <i className="fab fa-instagram text-xl"></i>
+          </a>
         </div>
       </div>
     </footer>
