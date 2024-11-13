@@ -1,0 +1,13 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\m1-api",
+    "\\m1-api\\src",
+    "\\m1-site",
+    "\\m1-site\\src",
+    "\\m1-site\\src\\app",
+    "\\m1-site\\src\\app\\books"
+  ],
+  "SelectedNode": "\\m1-api\\src\\app.controller.spec.ts",
+  "PreviewInSolutionExplorer": false
+}
