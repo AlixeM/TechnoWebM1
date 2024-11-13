@@ -6,8 +6,8 @@ const Footer = () => {
       <div className="container mx-auto text-center">
         <p className="text-lg">© 2024 MyLibrary. Tous droits réservés.</p>
         <div className="mt-4">
-          <a href="/mentions-legales" className="text-yellow-300 hover:underline mx-2">Mentions légales</a>
-          <a href="/politique-confidentialite" className="text-yellow-300 hover:underline mx-2">Politique de confidentialité</a>
+          <a className="text-yellow-300 hover:underline mx-2">Mentions légales</a>
+          <a className="text-yellow-300 hover:underline mx-2">Politique de confidentialité</a>
         </div>
       </div>
     </footer>
