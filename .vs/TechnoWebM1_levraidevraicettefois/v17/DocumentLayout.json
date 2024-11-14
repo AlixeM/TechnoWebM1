@@ -1,0 +1,287 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\alexa\\source\\repos\\TechnoWebM1_levraidevraicettefois\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\alexa\\source\\repos\\TechnoWebM1_levraidevraicettefois\\m1-api\\src\\app.module.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:m1-api\\src\\app.module.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\alexa\\source\\repos\\TechnoWebM1_levraidevraicettefois\\m1-site\\src\\app\\books\\page.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:m1-site\\src\\app\\books\\page.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\alexa\\source\\repos\\TechnoWebM1_levraidevraicettefois\\m1-api\\src\\modules\\books\\books.entity.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:m1-api\\src\\modules\\books\\books.entity.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\alexa\\source\\repos\\TechnoWebM1_levraidevraicettefois\\m1-api\\src\\modules\\books\\books.dto.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:m1-api\\src\\modules\\books\\books.dto.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\alexa\\source\\repos\\TechnoWebM1_levraidevraicettefois\\m1-api\\src\\modules\\authors\\authors.entity.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:m1-api\\src\\modules\\authors\\authors.entity.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\alexa\\source\\repos\\TechnoWebM1_levraidevraicettefois\\m1-api\\src\\modules\\reviews\\reviews.entity.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:m1-api\\src\\modules\\reviews\\reviews.entity.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\alexa\\source\\repos\\TechnoWebM1_levraidevraicettefois\\m1-api\\src\\modules\\books\\books.controller.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:m1-api\\src\\modules\\books\\books.controller.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\alexa\\source\\repos\\TechnoWebM1_levraidevraicettefois\\m1-api\\src\\main.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:m1-api\\src\\main.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\alexa\\source\\repos\\TechnoWebM1_levraidevraicettefois\\m1-api\\src\\modules\\database\\database.module.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:m1-api\\src\\modules\\database\\database.module.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\alexa\\source\\repos\\TechnoWebM1_levraidevraicettefois\\m1-api\\src\\modules\\books\\books.service.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:m1-api\\src\\modules\\books\\books.service.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\alexa\\source\\repos\\TechnoWebM1_levraidevraicettefois\\m1-api\\src\\modules\\books\\books.module.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:m1-api\\src\\modules\\books\\books.module.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\alexa\\source\\repos\\TechnoWebM1_levraidevraicettefois\\m1-api\\src\\modules\\authors\\authors.controller.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:m1-api\\src\\modules\\authors\\authors.controller.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\alexa\\source\\repos\\TechnoWebM1_levraidevraicettefois\\m1-api\\src\\modules\\authors\\authors.service.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:m1-api\\src\\modules\\authors\\authors.service.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\alexa\\source\\repos\\TechnoWebM1_levraidevraicettefois\\m1-api\\src\\modules\\authors\\authors.module.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:m1-api\\src\\modules\\authors\\authors.module.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\alexa\\source\\repos\\TechnoWebM1_levraidevraicettefois\\m1-api\\src\\modules\\authors\\authors.dto.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:m1-api\\src\\modules\\authors\\authors.dto.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 7,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "books.dto.ts",
+              "DocumentMoniker": "C:\\Users\\alexa\\source\\repos\\TechnoWebM1_levraidevraicettefois\\m1-api\\src\\modules\\books\\books.dto.ts",
+              "RelativeDocumentMoniker": "m1-api\\src\\modules\\books\\books.dto.ts",
+              "ToolTip": "C:\\Users\\alexa\\source\\repos\\TechnoWebM1_levraidevraicettefois\\m1-api\\src\\modules\\books\\books.dto.ts",
+              "RelativeToolTip": "m1-api\\src\\modules\\books\\books.dto.ts",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2024-11-14T22:40:34.036Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "books.entity.ts",
+              "DocumentMoniker": "C:\\Users\\alexa\\source\\repos\\TechnoWebM1_levraidevraicettefois\\m1-api\\src\\modules\\books\\books.entity.ts",
+              "RelativeDocumentMoniker": "m1-api\\src\\modules\\books\\books.entity.ts",
+              "ToolTip": "C:\\Users\\alexa\\source\\repos\\TechnoWebM1_levraidevraicettefois\\m1-api\\src\\modules\\books\\books.entity.ts",
+              "RelativeToolTip": "m1-api\\src\\modules\\books\\books.entity.ts",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAB8AAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2024-11-14T17:19:13.894Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "page.tsx",
+              "DocumentMoniker": "C:\\Users\\alexa\\source\\repos\\TechnoWebM1_levraidevraicettefois\\m1-site\\src\\app\\books\\page.tsx",
+              "RelativeDocumentMoniker": "m1-site\\src\\app\\books\\page.tsx",
+              "ToolTip": "C:\\Users\\alexa\\source\\repos\\TechnoWebM1_levraidevraicettefois\\m1-site\\src\\app\\books\\page.tsx",
+              "RelativeToolTip": "m1-site\\src\\app\\books\\page.tsx",
+              "ViewState": "AgIAACwAAAAAAAAAAAAAwAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2024-11-14T13:55:27.221Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "reviews.entity.ts",
+              "DocumentMoniker": "C:\\Users\\alexa\\source\\repos\\TechnoWebM1_levraidevraicettefois\\m1-api\\src\\modules\\reviews\\reviews.entity.ts",
+              "RelativeDocumentMoniker": "m1-api\\src\\modules\\reviews\\reviews.entity.ts",
+              "ToolTip": "C:\\Users\\alexa\\source\\repos\\TechnoWebM1_levraidevraicettefois\\m1-api\\src\\modules\\reviews\\reviews.entity.ts",
+              "RelativeToolTip": "m1-api\\src\\modules\\reviews\\reviews.entity.ts",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2024-11-14T21:31:30.633Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "database.module.ts",
+              "DocumentMoniker": "C:\\Users\\alexa\\source\\repos\\TechnoWebM1_levraidevraicettefois\\m1-api\\src\\modules\\database\\database.module.ts",
+              "RelativeDocumentMoniker": "m1-api\\src\\modules\\database\\database.module.ts",
+              "ToolTip": "C:\\Users\\alexa\\source\\repos\\TechnoWebM1_levraidevraicettefois\\m1-api\\src\\modules\\database\\database.module.ts",
+              "RelativeToolTip": "m1-api\\src\\modules\\database\\database.module.ts",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2024-11-14T21:17:58.385Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "app.module.ts",
+              "DocumentMoniker": "C:\\Users\\alexa\\source\\repos\\TechnoWebM1_levraidevraicettefois\\m1-api\\src\\app.module.ts",
+              "RelativeDocumentMoniker": "m1-api\\src\\app.module.ts",
+              "ToolTip": "C:\\Users\\alexa\\source\\repos\\TechnoWebM1_levraidevraicettefois\\m1-api\\src\\app.module.ts",
+              "RelativeToolTip": "m1-api\\src\\app.module.ts",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA4AAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2024-11-14T17:16:32.655Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "main.ts",
+              "DocumentMoniker": "C:\\Users\\alexa\\source\\repos\\TechnoWebM1_levraidevraicettefois\\m1-api\\src\\main.ts",
+              "RelativeDocumentMoniker": "m1-api\\src\\main.ts",
+              "ToolTip": "C:\\Users\\alexa\\source\\repos\\TechnoWebM1_levraidevraicettefois\\m1-api\\src\\main.ts",
+              "RelativeToolTip": "m1-api\\src\\main.ts",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2024-11-14T19:29:44.253Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "books.controller.ts",
+              "DocumentMoniker": "C:\\Users\\alexa\\source\\repos\\TechnoWebM1_levraidevraicettefois\\m1-api\\src\\modules\\books\\books.controller.ts",
+              "RelativeDocumentMoniker": "m1-api\\src\\modules\\books\\books.controller.ts",
+              "ToolTip": "C:\\Users\\alexa\\source\\repos\\TechnoWebM1_levraidevraicettefois\\m1-api\\src\\modules\\books\\books.controller.ts",
+              "RelativeToolTip": "m1-api\\src\\modules\\books\\books.controller.ts",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2024-11-14T17:28:42.718Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "books.service.ts",
+              "DocumentMoniker": "C:\\Users\\alexa\\source\\repos\\TechnoWebM1_levraidevraicettefois\\m1-api\\src\\modules\\books\\books.service.ts",
+              "RelativeDocumentMoniker": "m1-api\\src\\modules\\books\\books.service.ts",
+              "ToolTip": "C:\\Users\\alexa\\source\\repos\\TechnoWebM1_levraidevraicettefois\\m1-api\\src\\modules\\books\\books.service.ts",
+              "RelativeToolTip": "m1-api\\src\\modules\\books\\books.service.ts",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2024-11-14T17:18:38.891Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "authors.entity.ts",
+              "DocumentMoniker": "C:\\Users\\alexa\\source\\repos\\TechnoWebM1_levraidevraicettefois\\m1-api\\src\\modules\\authors\\authors.entity.ts",
+              "RelativeDocumentMoniker": "m1-api\\src\\modules\\authors\\authors.entity.ts",
+              "ToolTip": "C:\\Users\\alexa\\source\\repos\\TechnoWebM1_levraidevraicettefois\\m1-api\\src\\modules\\authors\\authors.entity.ts",
+              "RelativeToolTip": "m1-api\\src\\modules\\authors\\authors.entity.ts",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2024-11-14T17:02:58.816Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "books.module.ts",
+              "DocumentMoniker": "C:\\Users\\alexa\\source\\repos\\TechnoWebM1_levraidevraicettefois\\m1-api\\src\\modules\\books\\books.module.ts",
+              "RelativeDocumentMoniker": "m1-api\\src\\modules\\books\\books.module.ts",
+              "ToolTip": "C:\\Users\\alexa\\source\\repos\\TechnoWebM1_levraidevraicettefois\\m1-api\\src\\modules\\books\\books.module.ts",
+              "RelativeToolTip": "m1-api\\src\\modules\\books\\books.module.ts",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2024-11-14T18:28:26.038Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "authors.controller.ts",
+              "DocumentMoniker": "C:\\Users\\alexa\\source\\repos\\TechnoWebM1_levraidevraicettefois\\m1-api\\src\\modules\\authors\\authors.controller.ts",
+              "RelativeDocumentMoniker": "m1-api\\src\\modules\\authors\\authors.controller.ts",
+              "ToolTip": "C:\\Users\\alexa\\source\\repos\\TechnoWebM1_levraidevraicettefois\\m1-api\\src\\modules\\authors\\authors.controller.ts",
+              "RelativeToolTip": "m1-api\\src\\modules\\authors\\authors.controller.ts",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2024-11-14T17:02:22.238Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "authors.service.ts",
+              "DocumentMoniker": "C:\\Users\\alexa\\source\\repos\\TechnoWebM1_levraidevraicettefois\\m1-api\\src\\modules\\authors\\authors.service.ts",
+              "RelativeDocumentMoniker": "m1-api\\src\\modules\\authors\\authors.service.ts",
+              "ToolTip": "C:\\Users\\alexa\\source\\repos\\TechnoWebM1_levraidevraicettefois\\m1-api\\src\\modules\\authors\\authors.service.ts",
+              "RelativeToolTip": "m1-api\\src\\modules\\authors\\authors.service.ts",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAxwBYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2024-11-14T17:03:08.638Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "authors.module.ts",
+              "DocumentMoniker": "C:\\Users\\alexa\\source\\repos\\TechnoWebM1_levraidevraicettefois\\m1-api\\src\\modules\\authors\\authors.module.ts",
+              "RelativeDocumentMoniker": "m1-api\\src\\modules\\authors\\authors.module.ts",
+              "ToolTip": "C:\\Users\\alexa\\source\\repos\\TechnoWebM1_levraidevraicettefois\\m1-api\\src\\modules\\authors\\authors.module.ts",
+              "RelativeToolTip": "m1-api\\src\\modules\\authors\\authors.module.ts",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2024-11-14T17:03:29.287Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "authors.dto.ts",
+              "DocumentMoniker": "C:\\Users\\alexa\\source\\repos\\TechnoWebM1_levraidevraicettefois\\m1-api\\src\\modules\\authors\\authors.dto.ts",
+              "RelativeDocumentMoniker": "m1-api\\src\\modules\\authors\\authors.dto.ts",
+              "ToolTip": "C:\\Users\\alexa\\source\\repos\\TechnoWebM1_levraidevraicettefois\\m1-api\\src\\modules\\authors\\authors.dto.ts",
+              "RelativeToolTip": "m1-api\\src\\modules\\authors\\authors.dto.ts",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2024-11-14T17:02:15.087Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
