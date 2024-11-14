@@ -1,14 +1,17 @@
 /* eslint-disable prettier/prettier */
 import { BookEntity } from '../books/books.entity';
 export class CreateAuthorDto {
-    name: string;
-    books: BookEntity[];
+    first_name: string;
+    last_name: string;
+    picture: Buffer;
     biography: string;
-
+    books: BookEntity[];
 }
 
 export class UpdateAuthorDto {
-    name?: string;
-    books?: BookEntity[];
+    first_name?: string;
+    last_name?: string;
+    picture?: Buffer;
     biography?: string;
+    books?: BookEntity[];
 }

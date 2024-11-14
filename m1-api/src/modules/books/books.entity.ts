@@ -10,17 +10,17 @@ export class BookEntity {
     id: number;
 
     @Column({type: 'mediumtext', nullable:false})
-    titre: string;
+    title: string;
 
     @Column({ type: 'int'}) // nullable so we can add books without knowing the year of publication
     @IsNumber()
     @Min(-3300) // First book published in 3300 B.C.
     @Max(new Date().getFullYear())
-    annee_publication: number;
+    publicationYear: number;
 
     @Column({ type: 'decimal', precision: 10, scale: 2}) // 2 decimal places max, nullable if th book is not currently available
     @Min(0)
-    prix: number;
+    price: number;
 
     // Relation Many-to-One with Author : a book belongs to an author
     @ManyToOne(() => AuthorsEntity, (author) => author.books, { nullable: false })
