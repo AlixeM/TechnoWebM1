@@ -7,10 +7,10 @@ export class AuthorsEntity {
     @PrimaryGeneratedColumn()
     id: number;
 
-    @Column({type: 'varchar', length: 255, nullable: false}) 
+    @Column({type: 'text', length: 255, nullable: false}) 
     first_name: string;
 
-    @Column({type: 'varchar', length: 255, nullable: false})
+    @Column({type: 'text', length: 255, nullable: false})
     last_name: string;
 
     @Column({ type: 'blob'})
