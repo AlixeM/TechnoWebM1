@@ -1,20 +1,32 @@
-/* eslint-disable prettier/prettier */
-import { Entity, PrimaryGeneratedColumn, Column, ManyToOne } from 'typeorm';
-import { AuthorsEntity } from '../authors/authors.entity'; // Adjust path if necessary
+// book.entity.ts
+import { Entity, PrimaryGeneratedColumn, Column, ManyToOne, OneToMany } from 'typeorm';
+import { IsNumber, Min, Max } from 'class-validator';
+import { AuthorsEntity } from '../authors/authors.entity';
+import { ReviewsEntity } from '../reviews/reviews.entity';
 
 @Entity()
 export class BookEntity {
-    @PrimaryGeneratedColumn()  // Primary key, auto-incremented
+    @PrimaryGeneratedColumn()
     id: number;
 
-    @Column()  // A column for book title
+    @Column({type: 'mediumtext', nullable:false})
     title: string;
 
-    @ManyToOne(() => AuthorsEntity, (author) => author.books)  // Many-to-one relationship with Author
-    author: AuthorsEntity;
-
-    @Column()  // A column for the publication year
+    @Column({ type: 'int'}) // nullable so we can add books without knowing the year of publication
+    @IsNumber()
+    @Min(-3300) // First book published in 3300 B.C.
+    @Max(new Date().getFullYear())
     publicationYear: number;
 
+    @Column({ type: 'decimal', precision: 10, scale: 2}) // 2 decimal places max, nullable if th book is not currently available
+    @Min(0)
+    price: number;
 
+    // Relation Many-to-One with Author : a book belongs to an author
+    @ManyToOne(() => AuthorsEntity, (author) => author.books, { nullable: false })
+    author: AuthorsEntity;
+
+    // Relation One-to-Many with Review : a book can have zero or many reviews
+    @OneToMany(() => ReviewsEntity, (review) => review.book)
+    reviews: ReviewsEntity[];
 }

@@ -3,7 +3,7 @@ import { Controller, Get, Post, Body, Param, Put, Delete } from '@nestjs/common'
 import { BookService } from './books.service';
 import { CreateBookDto, UpdateBookDto } from './books.dto';
 
-@Controller('books')
+@Controller('api/books')
 export class BookController {
     constructor(private readonly bookService: BookService) { }
 

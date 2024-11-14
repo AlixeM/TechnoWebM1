@@ -1,21 +1,26 @@
 /* eslint-disable prettier/prettier */
 import { Entity, PrimaryGeneratedColumn, Column, ManyToOne } from 'typeorm';
+import { IsNumber, Min, Max } from 'class-validator';
 import { BookEntity } from '../books/books.entity';
 
 @Entity()
 export class ReviewsEntity {
-  @PrimaryGeneratedColumn()
-  id: number;
+    @PrimaryGeneratedColumn()
+    id: number;
 
-  @Column()
-  content: string;
+    @Column({type:'int', nullable:false})
+    @IsNumber()
+    @Min(0)
+    @Max(5)
+    score: number;
 
-  @ManyToOne(() => BookEntity, (book) => book.id)
-  book: BookEntity;
+    @Column({type:'text', length: 500, nullable:true}) // the review is optional
+    review: string;
 
-   @Column()
-   score: number;
+    @Column({ type: 'date', nullable: false, default: () => 'CURRENT_TIMESTAMP' })
+    posting_date: Date;
 
-   @Column()
-   username: string;
+    // Many-to-One relation with Book
+    @ManyToOne(() => BookEntity, (book) => book.id) 
+    book: BookEntity;
 }

@@ -1,15 +1,15 @@
 /* eslint-disable prettier/prettier */
 import { BookEntity } from '../books/books.entity';
 export class CreateReviewsDto {
-    content: string;
-    book: BookEntity;
     score: number;
-    username: string;
+    review: string;
+    posting_date: Date;
+    book: BookEntity;
 }
 
 export class UpdateReviewsDto {
-    content?: string;
-    book?: BookEntity;
     score?: number;
-    username?: string;
+    review?: string;
+    posting_date?: Date;
+    book?: BookEntity;
 }
