@@ -24,19 +24,7 @@ const Footer = () => {
 
         {/* Ligne de séparation avec effet */}
         <div className="mt-8 border-t-2 border-white opacity-40 w-1/2 mx-auto"></div>
-
-        {/* Icônes*/}
-        <div className="mt-6 flex justify-center space-x-6">
-          <a href="#" className="text-white hover:text-yellow-300 transition-colors duration-300">
-            <i className="fab fa-facebook-f text-xl"></i>
-          </a>
-          <a href="#" className="text-white hover:text-yellow-300 transition-colors duration-300">
-            <i className="fab fa-twitter text-xl"></i>
-          </a>
-          <a href="#" className="text-white hover:text-yellow-300 transition-colors duration-300">
-            <i className="fab fa-instagram text-xl"></i>
-          </a>
-        </div>
+        
       </div>
     </footer>
   );
