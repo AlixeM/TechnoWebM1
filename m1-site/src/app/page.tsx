@@ -1,15 +1,8 @@
 "use client";
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import './App.css';
 
 export default function HomePage() {
-  const [books, setBooks] = useState([]);
-  const [authors, setAuthors] = useState([]);
-
-  useEffect(() => {
-    // Exemple d'appel API pour obtenir les données des livres et auteurs
-  }, []);
-
   return (
     <div className="bg-[#E3F2FD] min-h-screen py-12 px-4">
       <main className="container mx-auto text-center">
@@ -17,11 +10,10 @@ export default function HomePage() {
           Bienvenue sur notre bibliothèque virtuelle !
         </p>
 
-        {/* Section des news */}
+        {/* Section des actualités de la bibliothèque */}
         <section className="mb-12">
-        
           <div className="flex flex-wrap justify-center gap-4">
-              <LibraryNewsSection />
+            <LibraryNewsSection />
           </div>
         </section>
       </main>
@@ -51,7 +43,7 @@ function LibraryNewsSection() {
       title: "Exposition des Livres Rares",
       description: "Découvrez des livres rares de notre collection historique lors d'une exposition spéciale.",
       date: "20 Novembre 2024",
-      imageUrl: "./uploads/image3.jpg"
+      imageUrl: "/uploads/image3.jpg"
     }
   ];
 
