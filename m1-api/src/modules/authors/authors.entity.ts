@@ -7,12 +7,19 @@ export class AuthorsEntity {
     @PrimaryGeneratedColumn()
     id: number;
 
-    @Column()
-    name: string;
+    @Column({type: 'varchar', length: 255, nullable: false}) 
+    first_name: string;
 
-    @OneToMany(() => BookEntity, (book) => book.author)
-    books: BookEntity[];
+    @Column({type: 'varchar', length: 255, nullable: false})
+    last_name: string;
 
-    @Column({ length: 1000 })  // Limiting biography length to 1000 characters
+    @Column({ type: 'blob'})
+    picture: Buffer;  // stocking the picture as a binary large object
+
+    @Column({ type : 'text', length: 2000 }) 
     biography: string;
+
+    // Relation One-to-Many with Book : an author can be associated with zero or many books
+    @OneToMany(() => BookEntity, (book) => book.author) 
+    books: BookEntity[];
 }
