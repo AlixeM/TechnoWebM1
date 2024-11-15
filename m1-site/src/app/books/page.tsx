@@ -6,9 +6,12 @@ import axios from 'axios';
 interface Book {
     id: number;
     title: string;
+    description: string;
+    /*
     publicationDate: string;
     author: string;
     price: number;
+    */
 }
 
 const Books = () => {
@@ -16,7 +19,7 @@ const Books = () => {
     const [searchQuery, setSearchQuery] = useState('');
     const [filteredBooks, setFilteredBooks] = useState<Book[]>([]);
     const [showModal, setShowModal] = useState(false);
-    const [newBook, setNewBook] = useState({ title: '', publicationDate: '', author: '', price: 0 });
+    const [newBook, setNewBook] = useState({ title: '', description: ''});
     const [sortBy, setSortBy] = useState('');
 
     // Fonction pour récupérer les livres avec les paramètres de tri et de recherche
@@ -119,9 +122,12 @@ const Books = () => {
                 {filteredBooks.map((book) => (
                     <div key={book.id} className="bg-white shadow-2xl rounded-lg p-6 transform hover:scale-105 transition-all duration-300 ease-in-out">
                         <h2 className="text-2xl font-semibold text-gray-800">{book.title}</h2>
+                        <p className="mt-2 text-gray-600">Description: {book.description}</p>
+                        {/*
                         <p className="mt-2 text-gray-600">Auteur: {book.author}</p>
                         <p className="mt-2 text-gray-600">Publié le: {book.publicationDate}</p>
                         <p className="mt-2 text-gray-600">Prix: {book.price} €</p>
+                        */}
                         <a
                             href={`/books/${book.id}`}
                             className="mt-4 inline-block text-purple-600 hover:text-purple-800 font-semibold"
@@ -151,7 +157,20 @@ const Books = () => {
                                 />
                             </div>
 
-                            {/* Auteur */}
+                            {/* Description */}
+                            <div className="mb-4">
+                                <label className="block text-gray-700">Description :</label>
+                                <input
+                                    type="text"
+                                    name="description"
+                                    value={newBook.description}
+                                    onChange={handleInputChange}
+                                    required
+                                    className="w-full p-4 border-2 border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-400"
+                                />
+                            </div>
+                            
+                            {/* Auteur 
                             <div className="mb-4">
                                 <label className="block text-gray-700">Auteur :</label>
                                 <input
@@ -162,9 +181,9 @@ const Books = () => {
                                     required
                                     className="w-full p-4 border-2 border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-400"
                                 />
-                            </div>
-
-                            {/* Prix */}
+                            </div>  */}
+                                
+                            {/* Prix 
                             <div className="mb-4">
                                 <label className="block text-gray-700">Prix :</label>
                                 <input
@@ -175,9 +194,9 @@ const Books = () => {
                                     required
                                     className="w-full p-4 border-2 border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-400"
                                 />
-                            </div>
+                            </div>  */}
 
-                            {/* Date de publication */}
+                            {/* Date de publication 
                             <div className="mb-4">
                                 <label className="block text-gray-700">Date de publication :</label>
                                 <input
@@ -188,7 +207,8 @@ const Books = () => {
                                     required
                                     className="w-full p-4 border-2 border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-400"
                                 />
-                            </div>
+                            </div>  */}
+                            
 
                             <div className="flex justify-between">
                                 <button

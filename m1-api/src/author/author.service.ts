@@ -15,9 +15,9 @@ export class AuthorService implements OnModuleInit {
         const count = await this.authorRepository.count();
         if (count === 0) {
             await this.authorRepository.save([
-                { title: 'Les océans', description: 'Un livre sur les gros poissons'},
-                { title: 'Les lacs', description: 'Un livre sur les poissons'},
-                { title: 'Les rivières', description: 'Un livre sur les petits poissons'},
+                { name: 'Jean Rostand', biography: 'Il était grand.'},
+                { name: 'Marcel Pagnol', biography: 'Il était fort.'},
+                { name: 'Victor Hugo', biography: 'Il était bon.'},
             ]);
         }
     }
