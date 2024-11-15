@@ -11,6 +11,11 @@ export default function Header() {
           <span className="ml-2">Haven</span>
         </div>
 
+      {/* Logo en haut à droite */}
+      <div className="absolute top-4 right-4">
+        <img src="/uploads/image7.jpg" alt="Logo de la bibliothèque" className="h-16 w-16 object-contain" />
+      </div>
+
         {/* Slogan centré */}
         <p className="text-base font-medium text-gray-200 mb-4 text-center mx-auto">
           Votre destination ultime pour la lecture et l'inspiration

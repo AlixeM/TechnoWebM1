@@ -70,8 +70,8 @@ const Authors = () => {
         <div className="p-10 bg-gradient-to-r from-green-200 to-blue-300 min-h-screen">
             <h1 className="text-4xl font-extrabold text-center text-gray-900 tracking-wide mb-8">Nos Auteurs</h1>
 
-            {/* Filtres de tri */}
-            <div className="flex justify-center gap-6 mb-8">
+            {/* Filtres de tri NON FONCTIONNELLE */}
+            {/*<div className="flex justify-center gap-6 mb-8">
                 <label className="text-lg text-gray-700">Trier par :</label>
                 <select
                     onChange={handleSortChange}
@@ -83,7 +83,8 @@ const Authors = () => {
                     <option value="bookCount">Nombre de livres</option>
                     <option value="averageRating">Moyenne des avis</option>
                 </select>
-            </div>
+            </div>*/}
+
 
             {/* Barre de recherche */}
             <div className="flex items-center justify-center bg-white p-4 shadow-xl rounded-xl w-full max-w-lg mx-auto mb-8">

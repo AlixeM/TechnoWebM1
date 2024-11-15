@@ -77,8 +77,8 @@ const Books = () => {
         <div className="p-10 bg-gradient-to-r from-blue-200 to-purple-300 min-h-screen">
             <h1 className="text-4xl font-extrabold text-center text-gray-900 tracking-wide mb-8">Nos Livres</h1>
 
-            {/* Filtres de tri */}
-            <div className="flex justify-center gap-6 mb-8">
+            {/* Filtres de tri NON FONCTIONNELLE */}
+            {/*<div className="flex justify-center gap-6 mb-8">
                 <label className="text-lg text-gray-700">Trier par :</label>
                 <select
                     onChange={handleSortChange}
@@ -91,7 +91,7 @@ const Books = () => {
                     <option value="author">Auteur</option>
                     <option value="price">Prix</option>
                 </select>
-            </div>
+            </div>*/}
 
             {/* Barre de recherche */}
             <div className="flex items-center justify-center bg-white p-4 shadow-xl rounded-xl w-full max-w-lg mx-auto mb-8">
