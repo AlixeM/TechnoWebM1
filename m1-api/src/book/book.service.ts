@@ -15,9 +15,9 @@ export class BookService implements OnModuleInit {
         const count = await this.bookRepository.count();
         if (count === 0) {
             await this.bookRepository.save([
-                { title: 'Les océans', description: 'Un livre sur les gros poissons'},
-                { title: 'Les lacs', description: 'Un livre sur les poissons'},
-                { title: 'Les rivières', description: 'Un livre sur les petits poissons'},
+                { title: 'Les océans', description: 'Un livre sur les gros poissons', publicationDate: '2021-01-01', price: '20'},
+                { title: 'Les lacs', description: 'Un livre sur les poissons', publicationDate: '1908-12-01', price: '10'},
+                { title: 'Les rivières', description: 'Un livre sur les petits poissons', publicationDate: '2002-05-01', price: '15'},
             ]);
         }
     }
