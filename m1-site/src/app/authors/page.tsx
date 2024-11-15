@@ -23,7 +23,7 @@ const Authors = () => {
     // Fonction pour récupérer les auteurs avec tri et recherche
     const fetchAuthors = async () => {
         try {
-            const response = await axios.get(`http://localhost:3001/api/authors`, {
+            const response = await axios.get(`http://localhost:3001/authors`, {
                 params: { search: searchQuery, sortBy },
             });
             setAuthors(response.data);
@@ -55,7 +55,7 @@ const Authors = () => {
 
     const handleAddAuthor = async (e: React.FormEvent) => {
         e.preventDefault();
-        const response = await axios.post('http://localhost:3001/api/authors', newAuthor);
+        const response = await axios.post('http://localhost:3001/authors', newAuthor);
         if (response.status === 201) {
             fetchAuthors(); // Actualiser la liste des auteurs
             closeModal();   // Fermer la modale
@@ -113,8 +113,8 @@ const Authors = () => {
                     <div key={author.id} className="bg-white shadow-2xl rounded-lg p-6 transform hover:scale-105 transition-all duration-300 ease-in-out">
                         <img src={author.photoUrl} alt={author.name} className="w-24 h-24 rounded-full mx-auto mb-4" />
                         <h2 className="text-2xl font-semibold text-gray-800 text-center">{author.name}</h2>
-                        <p className="mt-2 text-gray-600 text-center">Livres écrits : {author.bookCount}</p>
-                        <p className="mt-2 text-gray-600 text-center">Moyenne des avis : {author.averageRating.toFixed(1)}</p>
+                        {/*<p className="mt-2 text-gray-600 text-center">Livres écrits : {author.bookCount}</p>
+                        <p className="mt-2 text-gray-600 text-center">Moyenne des avis : {author.averageRating.toFixed(1)}</p>*/}
                     </div>
                 ))}
             </div>
