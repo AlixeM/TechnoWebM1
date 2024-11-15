@@ -19,7 +19,7 @@ const Authors = () => {
     const [searchQuery, setSearchQuery] = useState('');
     const [filteredAuthors, setFilteredAuthors] = useState<Author[]>([]);
     const [showModal, setShowModal] = useState(false);
-    const [newAuthor, setNewAuthor] = useState({ name: '', photoUrl: '', biography: '' });
+    const [newAuthor, setNewAuthor] = useState({ name: '', biography: '' });
     const [sortBy, setSortBy] = useState('');
 
     // Fonction pour récupérer les auteurs avec tri et recherche
@@ -80,8 +80,6 @@ const Authors = () => {
                 >
                     <option value="">Aucun</option>
                     <option value="name">Nom</option>
-                    <option value="bookCount">Nombre de livres</option>
-                    <option value="averageRating">Moyenne des avis</option>
                 </select>
             </div>
 
@@ -113,11 +111,14 @@ const Authors = () => {
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-12">
                 {filteredAuthors.map((author) => (
                     <div key={author.id} className="bg-white shadow-2xl rounded-lg p-6 transform hover:scale-105 transition-all duration-300 ease-in-out">
-                        {/*<img src={author.photoUrl} alt={author.name} className="w-24 h-24 rounded-full mx-auto mb-4" />*/}
                         <h2 className="text-2xl font-semibold text-gray-800 text-center">{author.name}</h2>
-                        <p className="text-2xl font-semibold text-gray-800 text-center">Biography : {author.biography}</p>
-                        {/*<p className="mt-2 text-gray-600 text-center">Livres écrits : {author.bookCount}</p>
-                        <p className="mt-2 text-gray-600 text-center">Moyenne des avis : {author.averageRating.toFixed(1)}</p>*/}
+                        <p className="text-2xl font-semibold text-gray-800 text-center">{author.biography}</p>
+                        <a
+                            href={`/authors/${author.id}`}
+                            className="mt-4 inline-block text-purple-600 hover:text-purple-800 font-semibold"
+                        >
+                            Voir Détails
+                        </a>
                     </div>
                 ))}
             </div>
@@ -135,19 +136,6 @@ const Authors = () => {
                                     type="text"
                                     name="name"
                                     value={newAuthor.name}
-                                    onChange={handleInputChange}
-                                    required
-                                    className="w-full p-4 border-2 border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400"
-                                />
-                            </div>
-
-                            {/* URL de la photo */}
-                            <div className="mb-4">
-                                <label className="block text-gray-700">URL de la Photo :</label>
-                                <input
-                                    type="url"
-                                    name="photoUrl"
-                                    value={newAuthor.photoUrl}
                                     onChange={handleInputChange}
                                     required
                                     className="w-full p-4 border-2 border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400"

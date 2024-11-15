@@ -12,13 +12,18 @@ export class AuthorController {
         return this.authorService.findAll();
     }
 
+    @Get(':id')
+    async getAuthorById(@Param('id') id: string): Promise<Author> {
+        return this.authorService.findOne(Number(id));
+    }
+
     @Post()
     create(@Body() authorData: Partial<Author>): Promise<Author> {
         return this.authorService.create(authorData);
     }
 
     @Delete(':id')
-    delete(@Param('id') id: number): Promise<void> {
-        return this.authorService.delete(id);
+    delete(@Param('id') id: string): Promise<void> {
+        return this.authorService.delete(Number(id));
     }
 }

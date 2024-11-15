@@ -31,4 +31,8 @@ export class AuthorService implements OnModuleInit {
 
     delete(id: number): Promise<void> {
         return this.authorRepository.delete(id).then(() => undefined);}
+
+    findOne(id: number): Promise<Author> {
+        return this.authorRepository.findOne({ where: {id}});
+    }
 }

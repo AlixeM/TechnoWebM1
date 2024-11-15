@@ -196,7 +196,7 @@ const Books = () => {
                                 />
                             </div>  
 
-                            {/* Date de publication*/}
+                            {/* Date de publication */}
                             <div className="mb-4">
                                 <label className="block text-gray-700">Date de publication :</label>
                                 <input
@@ -205,9 +205,10 @@ const Books = () => {
                                     value={newBook.publicationDate}
                                     onChange={handleInputChange}
                                     required
+                                    placeholder="YYYY/MM/DD"
                                     className="w-full p-4 border-2 border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-400"
                                 />
-                            </div>  
+                            </div>
                             
 
                             <div className="flex justify-between">
