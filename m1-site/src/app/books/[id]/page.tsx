@@ -8,9 +8,12 @@ import DeleteButton from '../../../components/BoutonSupprimer';
 interface Book {
   id: number;
   title: string;
+  description: string;
+  /*
   publicationDate: string;
   author: string;
   price?: number;
+  */
 }
 
 const BookDetailPage = () => {
@@ -29,7 +32,7 @@ const BookDetailPage = () => {
   const fetchBookDetails = async (bookId: string) => {
     try {
       setLoading(true);
-      const response = await axios.get(`http://localhost:3001/api/books/${bookId}`);
+      const response = await axios.get(`http://localhost:3001/books`);
       setBook(response.data);
     } /*catch (err) {
       setError("Erreur lors de la récupération des détails du livre.");
@@ -41,7 +44,7 @@ const BookDetailPage = () => {
   const handleDelete = async () => {
     if (id) {
       try {
-        await axios.delete(`http://localhost:3001/api/books/${id}`);
+        await axios.delete(`http://localhost:3001/books`);
         router.push('/books');
       } catch (error) {
         setError("Erreur lors de la suppression du livre.");
@@ -63,10 +66,14 @@ const BookDetailPage = () => {
       {/* Contenu principal */}
       <div className="flex flex-col w-full max-w-3xl bg-white shadow-lg rounded-lg p-6 mt-6 mb-12 space-y-6">
         <div className="text-center md:text-left">
+          <h2 className="text-lg text-gray-600">Title : {book?.title}</h2>
+          <p className="text-lg text-gray-600">Description : {book?.description}</p>
+          {/*
           <h2 className="text-lg text-gray-600">Auteur : {book?.author}</h2>
           <p className="text-lg text-gray-600">Date de publication : {book?.publicationDate}</p>
           <p className="text-lg text-gray-600">Prix : {book?.price ? `${book?.price} €` : 'Non disponible'}</p>
-        </div>
+            */}
+          </div>
 
         {/* Bouton de suppression */}
         <div className="text-center">

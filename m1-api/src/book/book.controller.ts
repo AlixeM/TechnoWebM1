@@ -12,6 +12,11 @@ export class BookController {
         return this.bookService.findAll();
     }
 
+    @Get(':id')
+    findOne(@Param('id') id: number): Promise<Book> {
+        return this.bookService.findOne(id);
+    }
+
     @Post()
     create(@Body() bookData: Partial<Book>): Promise<Book> {
         return this.bookService.create(bookData);

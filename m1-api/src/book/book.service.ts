@@ -31,4 +31,8 @@ export class BookService implements OnModuleInit {
 
     delete(id: number): Promise<void> {
         return this.bookRepository.delete(id).then(() => undefined);}
+
+    findOne(id: number): Promise<Book> {
+        return this.bookRepository.findOne({ where: { id } });
+    }
 }
