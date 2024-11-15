@@ -6,10 +6,12 @@ import axios from 'axios';
 interface Author {
     id: number;
     name: string;
-    photoUrl: string;
     biography: string;
+    /*
+    photoUrl: string;
     bookCount: number;
     averageRating: number;
+    */
 }
 
 const Authors = () => {
@@ -111,8 +113,9 @@ const Authors = () => {
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-12">
                 {filteredAuthors.map((author) => (
                     <div key={author.id} className="bg-white shadow-2xl rounded-lg p-6 transform hover:scale-105 transition-all duration-300 ease-in-out">
-                        <img src={author.photoUrl} alt={author.name} className="w-24 h-24 rounded-full mx-auto mb-4" />
+                        {/*<img src={author.photoUrl} alt={author.name} className="w-24 h-24 rounded-full mx-auto mb-4" />*/}
                         <h2 className="text-2xl font-semibold text-gray-800 text-center">{author.name}</h2>
+                        <p className="text-2xl font-semibold text-gray-800 text-center">Biography : {author.biography}</p>
                         {/*<p className="mt-2 text-gray-600 text-center">Livres écrits : {author.bookCount}</p>
                         <p className="mt-2 text-gray-600 text-center">Moyenne des avis : {author.averageRating.toFixed(1)}</p>*/}
                     </div>
