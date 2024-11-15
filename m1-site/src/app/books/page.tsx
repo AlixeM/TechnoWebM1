@@ -22,7 +22,7 @@ const Books = () => {
     // Fonction pour récupérer les livres avec les paramètres de tri et de recherche
     const fetchBooks = async () => {
         try {
-            const response = await axios.get(`http://localhost:3001/api/books`, {
+            const response = await axios.get(`http://localhost:3001/books`, {
                 params: {
                     search: searchQuery,
                     sortBy,
@@ -57,7 +57,7 @@ const Books = () => {
 
     const handleAddBook = async (e: React.FormEvent) => {
         e.preventDefault();
-        const response = await fetch('http://localhost:3001/api/books', {
+        const response = await fetch('http://localhost:3001/books', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(newBook),
