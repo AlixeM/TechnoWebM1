@@ -24,7 +24,7 @@ const AuthorDetailPage = () => {
   const fetchAuthorDetails = async (authorId: string) => {
     try {
       setLoading(true);
-      const response = await axios.get(`http://localhost:3001/api/authors/${authorId}`);
+      const response = await axios.get(`http://localhost:3001/authors/${authorId}`);
       setAuthor(response.data); // Mise à jour des données
     } catch (err: any) {
       if (err.response && err.response.status === 404) {
