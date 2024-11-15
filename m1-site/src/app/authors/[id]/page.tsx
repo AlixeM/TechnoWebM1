@@ -7,8 +7,8 @@ import DeleteButton from '../../../components/BoutonSupprimer';
 
 interface Author {
   id: number;
-  title: string;
-  description: string;
+  name: string;
+  biography: string;
   /*
   publicationDate: string;
   author: string;
@@ -59,15 +59,15 @@ const AuthorDetailPage = () => {
       {/* Titre du livre mis en avant */}
       <div className="w-full py-10">
         <h1 className="text-5xl font-extrabold text-center text-transparent bg-clip-text bg-gradient-to-r from-teal-500 to-indigo-500">
-          {author?.title || 'Auteur'}
+          {author?.name || 'Auteur'}
         </h1>
       </div>
 
       {/* Contenu principal */}
       <div className="flex flex-col w-full max-w-3xl bg-white shadow-lg rounded-lg p-6 mt-6 mb-12 space-y-6">
         <div className="text-center md:text-left">
-          <h2 className="text-lg text-gray-600">Nom : {author?.title}</h2>
-          <p className="text-lg text-gray-600">Biography : {author?.description}</p>
+          <h2 className="text-lg text-gray-600">Nom : {author?.name}</h2>
+          <p className="text-lg text-gray-600">Biography : {author?.biography}</p>
           {/*
           <h2 className="text-lg text-gray-600">Auteur : {author?.author}</h2>
           <p className="text-lg text-gray-600">Date de publication : {author?.publicationDate}</p>
@@ -77,7 +77,7 @@ const AuthorDetailPage = () => {
 
         {/* Bouton de suppression */}
         <div className="text-center">
-          <DeleteButton onConfirm={handleDelete} itemName={author?.title} />
+          <DeleteButton onConfirm={handleDelete} itemName={author?.name} />
         </div>
       </div>
     </div>
