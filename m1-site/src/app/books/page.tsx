@@ -6,11 +6,11 @@ import axios from 'axios';
 interface Book {
     id: number;
     title: string;
-    description: string;
-    /*
     publicationDate: string;
+    price: string;
+    /*
+    description: string;
     author: string;
-    price: number;
     */
 }
 
@@ -19,7 +19,7 @@ const Books = () => {
     const [searchQuery, setSearchQuery] = useState('');
     const [filteredBooks, setFilteredBooks] = useState<Book[]>([]);
     const [showModal, setShowModal] = useState(false);
-    const [newBook, setNewBook] = useState({ title: '', description: ''});
+    const [newBook, setNewBook] = useState({ title: '', description: '', publicationDate: '', price: '0' });
     const [sortBy, setSortBy] = useState('');
 
     // Fonction pour récupérer les livres avec les paramètres de tri et de recherche
@@ -122,11 +122,11 @@ const Books = () => {
                 {filteredBooks.map((book) => (
                     <div key={book.id} className="bg-white shadow-2xl rounded-lg p-6 transform hover:scale-105 transition-all duration-300 ease-in-out">
                         <h2 className="text-2xl font-semibold text-gray-800">{book.title}</h2>
-                        <p className="mt-2 text-gray-600">Description: {book.description}</p>
-                        {/*
-                        <p className="mt-2 text-gray-600">Auteur: {book.author}</p>
                         <p className="mt-2 text-gray-600">Publié le: {book.publicationDate}</p>
                         <p className="mt-2 text-gray-600">Prix: {book.price} €</p>
+                        {/*
+                        <p className="mt-2 text-gray-600">Description: {book.description}</p>
+                        <p className="mt-2 text-gray-600">Auteur: {book.author}</p>
                         */}
                         <a
                             href={`/books/${book.id}`}
@@ -183,31 +183,31 @@ const Books = () => {
                                 />
                             </div>  */}
                                 
-                            {/* Prix 
+                            {/* Prix */}
                             <div className="mb-4">
                                 <label className="block text-gray-700">Prix :</label>
                                 <input
-                                    type="number"
+                                    type="text"
                                     name="price"
                                     value={newBook.price}
                                     onChange={handleInputChange}
                                     required
                                     className="w-full p-4 border-2 border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-400"
                                 />
-                            </div>  */}
+                            </div>  
 
-                            {/* Date de publication 
+                            {/* Date de publication*/}
                             <div className="mb-4">
                                 <label className="block text-gray-700">Date de publication :</label>
                                 <input
-                                    type="date"
+                                    type="text"
                                     name="publicationDate"
                                     value={newBook.publicationDate}
                                     onChange={handleInputChange}
                                     required
                                     className="w-full p-4 border-2 border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-400"
                                 />
-                            </div>  */}
+                            </div>  
                             
 
                             <div className="flex justify-between">
