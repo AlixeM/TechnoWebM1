@@ -32,7 +32,7 @@ const BookDetailPage = () => {
   const fetchBookDetails = async (bookId: string) => {
     try {
       setLoading(true);
-      const response = await axios.get(`http://localhost:3001/books`);
+      const response = await axios.get(`http://localhost:3001/books/${bookId}`);
       setBook(response.data);
     } /*catch (err) {
       setError("Erreur lors de la récupération des détails du livre.");
@@ -44,7 +44,7 @@ const BookDetailPage = () => {
   const handleDelete = async () => {
     if (id) {
       try {
-        await axios.delete(`http://localhost:3001/books`);
+        await axios.delete(`http://localhost:3001/books/${id}`);
         router.push('/books');
       } catch (error) {
         setError("Erreur lors de la suppression du livre.");

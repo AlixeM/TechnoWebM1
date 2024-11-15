@@ -13,8 +13,8 @@ export class BookController {
     }
 
     @Get(':id')
-    findOne(@Param('id') id: number): Promise<Book> {
-        return this.bookService.findOne(id);
+    async getBookById(@Param('id') id: string): Promise<Book> {
+        return this.bookService.findOne(Number(id));
     }
 
     @Post()
@@ -23,7 +23,7 @@ export class BookController {
     }
 
     @Delete(':id')
-    delete(@Param('id') id: number): Promise<void> {
-        return this.bookService.delete(id);
+    delete(@Param('id') id: string): Promise<void> {
+        return this.bookService.delete(Number(id));
     }
 }
